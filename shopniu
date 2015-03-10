@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+
+	<body>
+		<iframe src="_head.html"></iframe>
+
+		<span id="second">5</span>
+		<script language=javascript>
+			var num = document.getElementById("second").innerHTML;
+			var int = setInterval("count()", 1000);
+
+			function count() {
+				num--;
+				document.getElementById("second").innerHTML = num;
+				if (num == 0) {
+					clearInterval(int);
+					window.open('http://www.zptong.com', '_target');
+				}
+			}
+		</script>
+		</form>
+	</body>
+
+</html>
